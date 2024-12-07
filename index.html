@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Inventory App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Daily Inventory Record</h1>
+    <form id="inventoryForm">
+        <label for="location">Place / Location:</label>
+        <input type="text" id="location" name="location" placeholder="Enter location" autocomplete="off" required>
+        <div id="autocomplete-results" style="position: absolute; background: white; border: 1px solid #ccc; width: calc(100% - 20px); display: none;"></div>
+
+        <label for="workDone">Work:</label>
+        <input type="text" id="workDone" name="work" placeholder="Describe the work done" required>
+
+        <button type="submit">Add Record</button>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
